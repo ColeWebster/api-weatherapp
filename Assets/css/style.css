@@ -25,5 +25,26 @@ header {
 }
 
 h1{
-    text-align: left;
+    text-align: center;
+    text-decoration: bold;
+}
+
+.row {
+    background-color: var(--darkblue);
+    color: var(--softwhite);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    margin-right: 1rem;
+}
+
+.forecast {
+    align-items: center;
+}
+
+.searchBar {
+    align-self: start;
 }

@@ -2,6 +2,10 @@
 
 - Started framework on the HTML to create the card for the search area and the header.
 - Need to reduce the size of the header and generate my key into the API.
+- Added CSS file and intial styling for the header
+- Reworking search card structure
+- Completed frame for HTML and working with CSS to make scable with flex
+
 
 
 # 06 Server-Side APIs: Weather Dashboard
