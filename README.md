@@ -4,8 +4,8 @@
 - Need to reduce the size of the header and generate my key into the API.
 - Added CSS file and intial styling for the header
 - Reworking search card structure
-- Completed frame for HTML and working with CSS to make scable with flex
-
+- Completed frame for HTML, noted out cards for API information to focus on getting local storage working.
+- Successfully got click to console.log, and now save to local storage
 
 
 # 06 Server-Side APIs: Weather Dashboard

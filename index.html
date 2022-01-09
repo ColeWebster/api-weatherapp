@@ -22,18 +22,20 @@
 
     <div class="container">
         <!-- Setup for the search bar and the history to save to local -->
-        <div class="searchbar">
-            <div class="row">
-                <h1>Search:</h1>
-            </div>
-            <div class="row">
-                <input type="text" class="searchBar" placeholder="Tampa">
-                <button type="submit" class="searchBtn"></button>
-            </div>
-            <div class="history"></div>
+        <div class="card">
+            <h2>Find your City:</h2>
+            <form method="post">
+                <div class="input">
+                    <input type="text" name="citySearch" id="citySearch" placeholder="Tampa" />
+                </div>
+                <button id="searchBtn">Search</button>
+            </form>
+            <br>
+            <p><strong>Recent Searches:</strong><span id="search-history"></span></p>
         </div>
+
         <!--Columns to show forecast for current city-->
-        <div class="col two-containers">
+        <!-- <div class="card">
             <div class="forecast">
                 <div class="row">
                     <h1 class="cityName">City Name</h1>
@@ -53,23 +55,19 @@
                     <p class="uvIndex">UV Index:</p>
                 </div>
             </div>
-            <!-- Five day container -->
+        </div> -->
+        <!-- Five day container -->
+        <!-- <div class="card">
             <div class="five-day-container">
                 <h1>5-Day Forecast:</h1>
                 <div class="card-row">
                 </div>
             </div>
-        </div>
-    </div>
-</main>
+        </div> -->
 
-<script src="./Assets/js/script.js"></script>
+        </main>
+
+        <script src="./Assets/js/script.js"></script>
 
 </body>
 </main>
-
-
-
-
-
-

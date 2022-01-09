@@ -9,11 +9,29 @@
 var searchHistory = [];
 var weatherApiURL = "https://api.openweathermap.org";
 var weatherApiKey = "145642453194c5fbabaae41a36e299b3";
+var searchBtn = document.querySelector("#searchBtn");
 
+
+// Search button
+    //adding event listener for the search button
+searchBtn.addEventListener("click", function(event) {
+    event.preventDefault();
+    //testing functionality
+    console.log("Hello");
+    var citySearch = document.querySelector("#citySearch").value;
+    localStorage.setItem("citySearch", citySearch);
+    displayLastSearch();
+})
+    //grabbing search from local storage
+function displayLastSearch() {
+    var city = localStorage.getItem("citySearch");
+    searchHistorySpan.textContent = city;
+}
+
+displayLastSearch();
 
 // ---------DOM Elements
 // Main card
-// Search button
 
 // ------Functions
 // renderSearchHistory
