@@ -1,0 +1,29 @@
+:root {
+    --darkblue: #3E5C76;
+    --lightblue: #748CAB;
+    --softwhite: #F0EBD8;
+    --navy:  #0D1321; 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    margin: 0
+}
+
+header {
+    background-color: var(--darkblue);
+    color: var(--softwhite);
+}
+
+.card {
+    background-color: var(--lightblue);
+    color: var(--softwhite)
+}
+
+h1{
+    text-align: left;
+}

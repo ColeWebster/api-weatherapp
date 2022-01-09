@@ -7,8 +7,8 @@
 
 // -----Global variables
 var searchHistory = [];
-var weatherApiURL = 'https://api.openweathermap.org'
-var weatherApiKey = '145642453194c5fbabaae41a36e299b3'
+var weatherApiURL = "https://api.openweathermap.org";
+var weatherApiKey = "145642453194c5fbabaae41a36e299b3";
 
 
 // ---------DOM Elements
