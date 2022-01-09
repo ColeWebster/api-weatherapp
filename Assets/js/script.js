@@ -20,13 +20,13 @@ var cities = [];
 //renderTodos
 function renderSearch() {
   searchList.innerHTML = "";
-  searchCountSpan.textcontent = cities.length;
+  searchCount.textcontent = cities.length;
 
   for (var i = 0; i < cities.length; i++) {
     var city = cities[i];
 
     var li = document.createElement('li');
-    li.textContent = city
+    li.textContent = city;
     li.setAttribute('data-index', i);
 
     var button = document.createElement('button');
@@ -38,7 +38,7 @@ function renderSearch() {
 }
 
 function init() {
-  var storedCities = JSON.parse(localStorage.getitem('cities'));
+  var storedCities = JSON.parse(localStorage.getItem('cities'));
   if (storedCities !== null) {
     cities = storedCities;
   }
@@ -49,9 +49,9 @@ function storedCities() {
   localStorage.setItem("cities", JSON.stringify(cities));
 }
 
-todoForm.addEventListener('submit', function (event) {
+searchForm.addEventListener('submit', function(event) {
   event.preventDefault();
-  var cityText = cityText.value.trim();
+  var cityText = searchInput.value.trim();
   if (cityText === "") {
     return;
   }
@@ -63,7 +63,7 @@ todoForm.addEventListener('submit', function (event) {
 
 });
 
-searchList.addEventListener('click',function(event){
+searchList.addEventListener('click', function(event) {
   var element = event.target;
 
   if (element.matches('button') === true) {
