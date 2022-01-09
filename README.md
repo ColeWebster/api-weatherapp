@@ -7,6 +7,8 @@
 - Completed frame for HTML, noted out cards for API information to focus on getting local storage working.
 - Successfully got click to console.log, and now save to local storage
 
+- Modeling local storage to closely match Todo List from lesson 26 to have multiple items saved to storage.
+
 
 # 06 Server-Side APIs: Weather Dashboard
 

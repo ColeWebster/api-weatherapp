@@ -23,19 +23,16 @@
     <div class="container">
         <!-- Setup for the search bar and the history to save to local -->
         <div class="card">
-            <h2>Find your City:</h2>
-            <form method="post">
-                <div class="input">
-                    <input type="text" name="citySearch" id="citySearch" placeholder="Tampa" />
-                </div>
-                <button id="searchBtn">Search</button>
+            <h1>Search for a City:</h1>
+            <form id="todo-form" method="POST">
+                <label for="todo-text">Add a Todo: </label>
+                <input type="text" placeholder="I need to..." name="todo-text" id="todo-text" />
             </form>
-            <br>
-            <p><strong>Recent Searches:</strong><span id="search-history"></span></p>
-        </div>
-
-        <!--Columns to show forecast for current city-->
-        <!-- <div class="card">
+            <p>Todo Count: <span id="todo-count">0</span></p>
+            <ul id="todo-list"></ul>
+        </div>    
+            <!--Columns to show forecast for current city-->
+            <!-- <div class="card">
             <div class="forecast">
                 <div class="row">
                     <h1 class="cityName">City Name</h1>
@@ -56,8 +53,8 @@
                 </div>
             </div>
         </div> -->
-        <!-- Five day container -->
-        <!-- <div class="card">
+            <!-- Five day container -->
+            <!-- <div class="card">
             <div class="five-day-container">
                 <h1>5-Day Forecast:</h1>
                 <div class="card-row">
@@ -65,9 +62,9 @@
             </div>
         </div> -->
 
-        </main>
+            </main>
 
-        <script src="./Assets/js/script.js"></script>
+            <script src="./Assets/js/script.js"></script>
 
 </body>
 </main>
