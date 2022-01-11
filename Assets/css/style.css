@@ -3,6 +3,7 @@
     --lightblue: #748CAB;
     --softwhite: #F0EBD8;
     --navy:  #0D1321; 
+    --
 }
 
 * {
@@ -12,3 +13,35 @@
 
 }
 
+/* Complete */
+header {
+    background-color: var(--darkblue);
+    color: var(--softwhite);
+    text-align: left;
+    margin: 0;
+    font-size: x-large;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: 0%;
+    height: 100%;
+}
+
+.search {
+    padding: 25px;
+    background-color: var(--softwhite);
+    color: var(--nacy);
+    height: 100%;
+}
+
+.forecast {
+    border: var(--navy);
+    border-style: solid;
+    width: 100%;
+}
+
+.row {
+    color:var(--navy);
+}

@@ -5,106 +5,63 @@
   <!-- meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+  <script src="https://kit.fontawesome.com/80833262c1.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <title>Weather Dashboard</title>
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-light bg-primary">
-      <div class="container-fluid row">
-        <a class="navbar-brand col align-self-center font-weight-bold text-center text-white" href="#">
-          Weather Dashboard
-        </a>
-      </div>
-    </nav>
+  <!-- Header  -->
+  <header class="header">
+    <h1>Weather Dashboard</h1>
   </header>
-  <main>
-    <div class="container-fluid d-flex">
-      <form class="flex-column m-2 p-2">
-        <div class="form-group">
-          <label for="citySearch" class="font-weight-bold m-2">
-            <h2>Search here:</h2>
-          </label>
-          <input type="text" class="form-control m-1" id="citySearch" placeholder="Find your weather">
-          <button type="submit" class="btn btn-primary col m-1">Search</button>
+
+
+  <!-- Search container  -->
+  <div class="container">
+    <div class="search">
+      <div class="row">
+        <h1>Find your weather:</h1>
+      </div>
+      <div class="row">
+        <input type="text" class="searchBar" placeholder="Atlanta">
+        <button type="submit" class="searchButton">
+          <i class="fas fa-search-location"></i>
+        </button>
+      </div>
+      <div class="history"></div>
+    </div>
+    <div class="col-two-container">
+      <div class="forecast">
+        <div class="row">
+          <h1 class="city">City Name:</h1>
+          <h1 class="date"></h1>
         </div>
-        <div class="form-group">
-
+        <div class="row">
+          <p class="temp">Temperature:</p>
         </div>
-      </form>
-      <div class="jumbotron flex-column m-2 p-2">
-        <h1 class="display-4 flex-row">Hello, world!</h1>
-        <p class="lead flex-row">This is a simple hero unit, a simple jumbotron-style component for calling extra
-          attention to featured content or information.</p>
-        <h3>5-Day Forecast</h3>
-        <div class="d-flex flex-row my-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+        <div class="row">
+          <p class="humid">Humidity:</p>
+        </div>
+        <div class="row">
+          <p class="windSpeed">Wind Speed:</p>
+        </div>
+        <div class="row">
+          <p class="uvIndex">UV Index:</p>
+        </div>
+      </div>
 
-            </div>
-          </div>
-          <div class="card p-2">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-
-            </div>
-          </div>
-          <div class="card p-2">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-
-            </div>
-          </div>
-          <div class="card p-2">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-
-            </div>
-          </div>
-          <div class="card p-2">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-
-            </div>
-          </div>
+      <div class="five-day-container">
+        <h1>5-Day Forecast:</h1>
+        <div class="card-row">
         </div>
       </div>
     </div>
-    </div>
+  </div>
+
   </main>
-
-
-  <!-- Bootstrap -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
 </body>
 
 </html>
