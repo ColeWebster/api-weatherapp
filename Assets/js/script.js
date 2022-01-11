@@ -18,20 +18,51 @@ var uvIndex = $(".uvIndex");
 searchButton.on("click", function(e) {
     e.preventdefault();
     if (search.val() === ""); {
-        alert("Please enter a city name.")
+        alert("Please enter a city name.");
+        return;
     }
+    console.log("test");
+    addWeather(search.val());
+});
+
+$(document).on("click", ".history", function() {
+    console.log("test");
+    let thisElement = $(this);
+    addWeather(thisElement.text());
 })
+// Handle form submit
+
+//Save to local storage
+if (JSON.parse(localStorage.getItem("history")) === null) {
+    console.log("search - Not found");
+} else {
+    console.log("search added to history");
+    renderSearchHistory();
+}
+// Append to search history
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // ---------DOM Elements
 // Main card
 
 // ------Functions
 // renderSearchHistory
-// Append to search history
 // Render the weather
 // Render the forecast card
 // Render the forecast
-// fetch from the API the weather
 // Fetch the coordinates of the city
-// Handle form submit
+// fetch from the API the weather
 // Click the cities in search history to reappear
