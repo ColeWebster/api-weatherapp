@@ -3,7 +3,7 @@ https://colewebster.github.io/api-weatherapp/
 
 https://github.com/ColeWebster/api-weatherapp
 
-
+- Doublechecking the link to stylesheet as CSS is not appearing. 
 ## Student Notes
 
 - Started framework on the HTML to create the card for the search area and the header.
