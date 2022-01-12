@@ -1,3 +1,9 @@
+## Deloyed Notes
+https://colewebster.github.io/api-weatherapp/
+
+https://github.com/ColeWebster/api-weatherapp
+
+
 ## Student Notes
 
 - Started framework on the HTML to create the card for the search area and the header.
